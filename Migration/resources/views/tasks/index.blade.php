@@ -1,5 +1,4 @@
-@extends('layouts.app'
-)
+@extends('layouts.app')
 @section('content')
     <h1>Tasks</h1>
     <a href="{{ url('/tasks/create') }}">Create Tasks</a>

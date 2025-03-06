@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* General Styling */
+@import tailwindcss;
+@source ../views;
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;

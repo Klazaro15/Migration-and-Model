@@ -10,6 +10,7 @@
         body {
             background-color: #f8f9fa;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         header h1 {
             color: #007bff;
