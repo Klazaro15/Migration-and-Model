@@ -1,99 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import tailwindcss;
-@source ../views;
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-}
+/* Custom Styles */
+@layer components {
+    .btn-primary {
+        @apply bg-custom-blue text-white py-2 px-4 rounded-lg font-semibold shadow-md hover:bg-custom-light-blue transition duration-300;
+    }
 
-/* Navbar */
-.navbar {
-    background-color: #007bff;
-    padding: 1rem;
-}
+    .card {
+        @apply bg-white p-6 rounded-lg shadow-lg border border-gray-200;
+    }
 
-.navbar a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
+    .bg-custom-blue {
+        @apply bg-blue-600;
+    }
 
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-/* Task List */
-h1 {
-    color: #007bff;
-}
-
-.list-group-item {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.list-group-item a {
-    color: #333;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.list-group-item a:hover {
-    text-decoration: underline;
-}
-
-/* Form Styling */
-.form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 100%;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #007bff;
-}
-
-/* Buttons */
-.btn {
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
-
-.btn-success {
-    background-color: #28a745;
-    border: none;
-}
-
-.btn-success:hover {
-    background-color: #218838;
-}
-
-.mb-3 {
-    margin-bottom: 15px;
-}
-
-.mt-4 {
-    margin-top: 40px;
+    .hover\:text-custom-light-blue:hover {
+        @apply text-blue-300;
+    }
 }

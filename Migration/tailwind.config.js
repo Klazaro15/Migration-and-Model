@@ -8,13 +8,22 @@ export default {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.js',
     ],
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-            },
+          colors: {
+            'custom-blue': '#4F46E5',  // Custom deep blue
+            'custom-light-blue': '#93C5FD', // Custom light blue for hover effects
+          },
+          fontFamily: {
+            sans: ['Inter', 'Arial', 'sans-serif'],  // Custom fonts
+          },
+          spacing: {
+            'custom-spacing': '3rem',  // Custom spacing to use where needed
+          },
         },
-    },
-    plugins: [],
-};
+      },
+      plugins: [],
+    };
